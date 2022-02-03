@@ -562,7 +562,7 @@ void *qoi_decode(const void *data, int size, qoi_desc *desc, int channels) {
 		if (run > 0) {
 			run--;
 		}
-		else if (p < chunks_len) {
+		else {
 			int b1 = bytes[p++];
 
 			if (b1 == QOI_OP_RGB) {
